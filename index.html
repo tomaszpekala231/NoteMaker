@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NotesApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <aside class="tab">
+            <button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'add')">Add a note</button>
+        </aside>
+        
+        <section id="home" class="tabcontent">
+            <header class="header">
+                <h2 class="header__h2">
+                    Remember to keep your all notes in order. Make sure you write down your the most important tasks to do today. 
+                </h2>
+
+                <div class="search">
+                    <input type="text" class="search__input" id="search__input" placeholder="Search notes by title...">
+                </div>
+
+                <!-- Notes div -->
+                <div class="notes">
+                    
+                </div> 
+                <!-- Notes div end -->
+                
+
+            </header>
+        </section>
+        
+        <section id="add" class="tabcontent">
+            <header class="header">
+                <h2 class="header__h2">
+                   Add a new note
+                </h2>
+
+                <div class="form-div">
+                    <form class="form">
+                        <input type="text" class="form__input form__input--title" placeholder="Enter a title..">
+                        <input type="text" class="form__input form__input--author" placeholder="Enter an author...">
+                        <textarea class="form__input--body" placeholder="Enter a body..."></textarea>
+                        <input type="submit" value="Submit" class="form__input--button">
+                    </form>
+                </div>
+               
+                
+
+            </header>
+        </section>
+        
+
+    </div><!-- ========== container END ========== -->
+
+      <script src="app.js"></script>
+</body>
+</html>
